@@ -1,0 +1,181 @@
+ssh://sn671@ilab.cs.rutgers.edu:22/ilab/users/sn671/.conda/envs/NLP/bin/python -u /ilab/users/sn671/NLP/main.py
+2021-05-09 17:24:17.747011: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+Using PyTorch version: 1.8.1+cu102 Device: cuda [GeForce GTX 1080 Ti]
+The truncated tokenized first training sentence:
+['[CLS]', 'in', 'article', '<', '1993', '##ap', '##r', '##25', '.', '1822', '##53', '.', '144', '##9', '@', 'virginia', '.', 'ed', '##u', '>', 'ab', '##4', '##z', '@', 'virginia', '.', 'ed', '##u', '(', '"', 'and', '##i', 'bey', '##er', '"', ')', 'writes', ':', '>', 'i', 'have', 'just', 'started', 'reading', 'the', 'articles', 'in', 'this', 'news', '>', 'group', '.', 'there', 'seems', 'to', 'be', 'an', 'attempt', 'by', 'some', 'members', 'to', 'quiet', '>', 'other', 'members', 'with', 'scare', 'tactics', '.', 'i', 'believe', 'one', 'posting', 'said', '>', 'that', 'all', 'posting', '##s', 'by', 'one', 'person', 'are', 'being', 'forward', '##ed', 'to', 'his', '>', 'server', 'who', 'keeps', 'a', 'file', 'on', 'him', 'in', 'hope', 'that', '"', 'appropriate', 'action', '>', 'might', 'be', 'taken', '"', '.', '>', 'i', 'don', "'", 't', 'know', 'where', 'you', 'guys', 'are', 'from', 'but', 'in', 'america', '>', 'such', 'attempts', 'to', 'SEP']
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Train Epoch: 1 [0/13795 (0%)]	Loss: 3.025174
+Train Epoch: 1 [3200/13795 (23%)]	Loss: 2.074763
+Train Epoch: 1 [6400/13795 (46%)]	Loss: 1.049260
+Train Epoch: 1 [9600/13795 (70%)]	Loss: 0.949852
+Train Epoch: 1 [12800/13795 (93%)]	Loss: 1.146831
+ For Validation set:
+Accuracy: [1171/1533] 0.7639
+
+f1_score:  0.7303
+
+Train Epoch: 2 [0/13795 (0%)]	Loss: 0.801852
+Train Epoch: 2 [3200/13795 (23%)]	Loss: 1.106898
+Train Epoch: 2 [6400/13795 (46%)]	Loss: 0.834945
+Train Epoch: 2 [9600/13795 (70%)]	Loss: 0.642121
+Train Epoch: 2 [12800/13795 (93%)]	Loss: 1.089367
+ For Validation set:
+Accuracy: [1262/1533] 0.8232
+
+f1_score:  0.8092
+
+Train Epoch: 3 [0/13795 (0%)]	Loss: 0.523408
+Train Epoch: 3 [3200/13795 (23%)]	Loss: 0.213425
+Train Epoch: 3 [6400/13795 (46%)]	Loss: 0.450160
+Train Epoch: 3 [9600/13795 (70%)]	Loss: 0.154097
+Train Epoch: 3 [12800/13795 (93%)]	Loss: 0.503615
+ For Validation set:
+Accuracy: [1292/1533] 0.8428
+
+f1_score:  0.8330
+
+Train Epoch: 4 [0/13795 (0%)]	Loss: 0.127250
+Train Epoch: 4 [3200/13795 (23%)]	Loss: 0.429428
+Train Epoch: 4 [6400/13795 (46%)]	Loss: 0.157581
+Train Epoch: 4 [9600/13795 (70%)]	Loss: 0.323695
+Train Epoch: 4 [12800/13795 (93%)]	Loss: 0.220475
+ For Validation set:
+Accuracy: [1280/1533] 0.8350
+
+f1_score:  0.8254
+
+Train Epoch: 5 [0/13795 (0%)]	Loss: 0.022251
+Train Epoch: 5 [3200/13795 (23%)]	Loss: 0.070498
+Train Epoch: 5 [6400/13795 (46%)]	Loss: 0.015159
+Train Epoch: 5 [9600/13795 (70%)]	Loss: 0.018037
+Train Epoch: 5 [12800/13795 (93%)]	Loss: 0.026718
+ For Validation set:
+Accuracy: [1315/1533] 0.8578
+
+f1_score:  0.8510
+
+Train Epoch: 6 [0/13795 (0%)]	Loss: 0.097613
+Train Epoch: 6 [3200/13795 (23%)]	Loss: 0.069899
+Train Epoch: 6 [6400/13795 (46%)]	Loss: 0.164039
+Train Epoch: 6 [9600/13795 (70%)]	Loss: 0.021346
+Train Epoch: 6 [12800/13795 (93%)]	Loss: 0.075131
+ For Validation set:
+Accuracy: [1311/1533] 0.8552
+
+f1_score:  0.8460
+
+Train Epoch: 7 [0/13795 (0%)]	Loss: 0.048192
+Train Epoch: 7 [3200/13795 (23%)]	Loss: 0.038603
+Train Epoch: 7 [6400/13795 (46%)]	Loss: 0.019987
+Train Epoch: 7 [9600/13795 (70%)]	Loss: 0.012924
+Train Epoch: 7 [12800/13795 (93%)]	Loss: 0.058021
+ For Validation set:
+Accuracy: [1316/1533] 0.8584
+
+f1_score:  0.8506
+
+Train Epoch: 8 [0/13795 (0%)]	Loss: 0.017289
+Train Epoch: 8 [3200/13795 (23%)]	Loss: 0.016380
+Train Epoch: 8 [6400/13795 (46%)]	Loss: 0.075243
+Train Epoch: 8 [9600/13795 (70%)]	Loss: 0.158542
+Train Epoch: 8 [12800/13795 (93%)]	Loss: 0.010139
+ For Validation set:
+Accuracy: [1319/1533] 0.8604
+
+f1_score:  0.8525
+
+For Test set:
+Accuracy: [3031/3500] 0.8660
+
+f1_score:  0.8586
+
+
+Process finished with exit code 0
+
+
+
+
+========================================================================================================
+========================================================================================================
+ssh://sn671@ilab.cs.rutgers.edu:22/ilab/users/sn671/.conda/envs/NLP/bin/python -u /ilab/users/sn671/NLP/r8_classifier.py
+2021-05-09 19:30:27.320940: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+/ilab/users/sn671/NLP/reuters21578
+Downloading: 100%|███████████████████████████| 232k/232k [00:00<00:00, 2.36MB/s]
+Downloading: 100%|███████████████████████████| 28.0/28.0 [00:00<00:00, 12.8kB/s]
+Downloading: 100%|███████████████████████████| 466k/466k [00:00<00:00, 2.09MB/s]
+The truncated tokenized first training sentence:
+['[CLS]', 'champion', 'products', '<', 'ch', '>', 'approve', '##s', 'stock', 'split', 'rochester', ',', 'n', '.', 'y', '.', ',', 'feb', '26', '-', 'champion', 'products', 'inc', 'said', 'its', 'board', 'of', 'directors', 'approved', 'a', 'two', '-', 'for', '-', 'one', 'stock', 'split', 'of', 'its', 'common', 'shares', 'for', 'shareholders', 'of', 'record', 'as', 'of', 'april', '1', ',', '1987', '.', 'the', 'company', 'also', 'said', 'its', 'board', 'voted', 'to', 'recommend', 'to', 'shareholders', 'at', 'the', 'annual', 'meeting', 'april', '23', 'an', 'increase', 'in', 'the', 'authorized', 'capital', 'stock', 'from', 'five', 'ml', '##n', 'to', '25', 'ml', '##n', 'shares', '.', 're', '##uter', 'SEP']
+Downloading: 100%|██████████████████████████████| 570/570 [00:00<00:00, 294kB/s]
+Downloading: 100%|███████████████████████████| 440M/440M [01:18<00:00, 5.59MB/s]
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Train Epoch: 1 [0/4936 (0%)]	Loss: 3.097632
+Train Epoch: 1 [3200/4936 (65%)]	Loss: 0.519823
+ For Validation set:
+Accuracy: [517/549] 0.9417
+
+f1_score:  0.7430
+
+Train Epoch: 2 [0/4936 (0%)]	Loss: 0.576353
+Train Epoch: 2 [3200/4936 (65%)]	Loss: 0.025964
+ For Validation set:
+Accuracy: [527/549] 0.9599
+
+f1_score:  0.9030
+
+Train Epoch: 3 [0/4936 (0%)]	Loss: 0.366392
+Train Epoch: 3 [3200/4936 (65%)]	Loss: 0.053483
+ For Validation set:
+Accuracy: [528/549] 0.9617
+
+f1_score:  0.9100
+
+Train Epoch: 4 [0/4936 (0%)]	Loss: 0.009457
+Train Epoch: 4 [3200/4936 (65%)]	Loss: 0.012140
+ For Validation set:
+Accuracy: [536/549] 0.9763
+
+f1_score:  0.9419
+
+Train Epoch: 5 [0/4936 (0%)]	Loss: 0.015318
+Train Epoch: 5 [3200/4936 (65%)]	Loss: 0.008705
+ For Validation set:
+Accuracy: [535/549] 0.9745
+
+f1_score:  0.9384
+
+Train Epoch: 6 [0/4936 (0%)]	Loss: 0.007175
+Train Epoch: 6 [3200/4936 (65%)]	Loss: 0.009600
+ For Validation set:
+Accuracy: [535/549] 0.9745
+
+f1_score:  0.9384
+
+Train Epoch: 7 [0/4936 (0%)]	Loss: 0.005079
+Train Epoch: 7 [3200/4936 (65%)]	Loss: 0.009179
+ For Validation set:
+Accuracy: [536/549] 0.9763
+
+f1_score:  0.9391
+
+Train Epoch: 8 [0/4936 (0%)]	Loss: 0.010760
+Train Epoch: 8 [3200/4936 (65%)]	Loss: 0.007887
+ For Validation set:
+Accuracy: [536/549] 0.9763
+
+f1_score:  0.9391
+
+For Test set:
+Accuracy: [2145/2189] 0.9799
+
+f1_score:  0.9520
+
+
+Process finished with exit code 0
